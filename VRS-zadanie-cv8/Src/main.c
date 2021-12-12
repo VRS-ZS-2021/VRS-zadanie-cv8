@@ -57,7 +57,7 @@ int main(void)
 
   while (1)
   {
-	  if(disp_time > (saved_time + 500))
+	  if(disp_time >= (saved_time + 500))
 	  {
 
 		  display_sign(display_text[act_index],display_text[act_index+1],display_text[act_index+2],display_text[act_index+3]);
