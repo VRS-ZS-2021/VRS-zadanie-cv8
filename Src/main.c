@@ -30,6 +30,7 @@ extern uint64_t disp_time;
 
 uint64_t saved_time;
 char display_text[]="Juliana_Phamova_98360";
+//char display_text[]="aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ"; //test string
 int act_index=0, right=1;
 
 
@@ -68,7 +69,7 @@ int main(void)
 	  	  } else {
 	  		  act_index--;
 	  	  }
-	  	  if(act_index == 17) { //17 velkost zobrazovaneho textu, ak dojde nakoniec zmeni smer
+	  	  if(act_index == strlen(display_text)-4) { //17 velkost zobrazovaneho textu, ak dojde nakoniec zmeni smer
 	  		  right = 0;
 	  	  }
 	  	  if (act_index == 0){
